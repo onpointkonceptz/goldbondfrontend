@@ -3,7 +3,7 @@
 
 class GoldbondDashboard {
     constructor() {
-        this.baseUrl = 'http://localhost:3000/api';
+        this.baseUrl = 'https://goldbond.onrender.com/api';
         this.authToken = localStorage.getItem('authToken') || null;
         this.currentUser = null;
         this.currentSection = 'profile';
@@ -980,3 +980,4 @@ if (document.readyState === 'loading') {
 }
 
 console.log('🚀 GOLDBOND Dashboard JS loaded');
+
