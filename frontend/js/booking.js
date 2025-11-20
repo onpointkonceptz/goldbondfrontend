@@ -66,7 +66,7 @@ bookingForm?.addEventListener('submit', async (e) => {
     
     try {
         // Send booking request to backend
-        const response = await fetch('http://localhost:3000/api/bookings', {
+        const response = await fetch('https://goldbond.onrender.com/api/bookings', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -252,4 +252,5 @@ const quickWhatsAppBooking = (testType) => {
 };
 
 // Export function for use in other pages
+
 window.quickWhatsAppBooking = quickWhatsAppBooking;
